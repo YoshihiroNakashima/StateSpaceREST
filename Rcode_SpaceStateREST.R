@@ -163,4 +163,4 @@ g <- ggplot() +
   geom_line(data = res, mapping = aes(x = DateTime, y = `50%`, color = Distance)) + 
   ylab("Density") + 
   ylim(c(0, 0.3))
-save.image("res_density.png")
+ggsave("res_density.png")
